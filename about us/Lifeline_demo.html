@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeLine - Your Living Timeline</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f4f8;
+            color: #333;
+        }
+        
+        header {
+            background-color: #6c63ff;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        nav {
+            background: #4b44c2;
+            display: flex;
+            justify-content: center;
+            padding: 0.75rem;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+            border-radius: 8px;
+        }
+        
+        nav a:hover {
+            background-color: #5a52d6;
+        }
+        
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        .moment,
+        .milestone,
+        .profile-section {
+            background: white;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+        
+        .moment h3,
+        .milestone h3,
+        .profile-section h3 {
+            margin-top: 0;
+        }
+        
+        .tag,
+        .emotion {
+            display: inline-block;
+            background-color: #eee;
+            padding: 0.2rem 0.6rem;
+            border-radius: 8px;
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .add-moment,
+        .add-milestone {
+            margin-top: 2rem;
+        }
+        
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        
+        button {
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LifeLine</h1>
+        <p>Your emotional timeline. A social archive of your life.</p>
+    </header>
+    <nav>
+        <a href="#home" onclick="showPage('home')">🏠</a>
+        <a href="#moments" onclick="showPage('moments')">📝</a>
+        <a href="#milestones" onclick="showPage('milestones')">🎯</a>
+        <a href="#profile" onclick="showPage('profile')">👤</a>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="page">
+            <h2>Welcome to LifeLine</h2>
+            <p>Capture your memories, emotions, and milestones. Start building your story.</p>
+        </div>
+
+        <div id="moments" class="page" style="display:none">
+            <div class="add-moment">
+                <h2>Add a Life Moment</h2>
+                <input type="text" id="title" placeholder="Moment Title (e.g. First Love)" />
+                <textarea id="description" placeholder="Describe the moment..."></textarea>
+                <select id="emotion">
+          <option value="">Emotion</option>
+          <option>🔥 Passion</option>
+          <option>💔 Loss</option>
+          <option>😄 Joy</option>
+          <option>🤯 Turning Point</option>
+        </select>
+                <input type="text" id="people" placeholder="People Involved (e.g. John, Mom)" />
+                <button onclick="addMoment()">Add Moment</button>
+            </div>
+
+            <div id="timeline">
+                <h2>Your Life Moments</h2>
+                <!-- Moments will be added here -->
+            </div>
+        </div>
+
+        <div id="milestones" class="page" style="display:none">
+            <div class="add-milestone">
+                <h2>Add a Milestone</h2>
+                <input type="text" id="milestoneTitle" placeholder="Milestone Title (e.g. First Job)" />
+                <textarea id="milestoneDesc" placeholder="Milestone Description..."></textarea>
+                <button onclick="addMilestone()">Add Milestone</button>
+            </div>
+
+            <div id="milestoneList">
+                <h2>Your Milestones</h2>
+                <!-- Milestones will appear here -->
+            </div>
+        </div>
+
+        <div id="profile" class="page" style="display:none">
+            <div class="profile-section">
+                <h3>My LifeLine Profile</h3>
+                <p>Name: <strong>Jane Doe</strong></p>
+                <p>Joined: 2025</p>
+                <p>Public Chapters: 4</p>
+                <p>Private Chapters: 2</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        function addMoment() {
+            const title = document.getElementById('title').value;
+            const description = document.getElementById('description').value;
+            const emotion = document.getElementById('emotion').value;
+            const people = document.getElementById('people').value;
+
+            if (!title || !description || !emotion) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            const momentDiv = document.createElement('div');
+            momentDiv.className = 'moment';
+            momentDiv.innerHTML = `
+        <h3>${title}</h3>
+        <p>${description}</p>
+        <div class="emotion">${emotion}</div>
+        <div class="tag">👥 ${people}</div>
+      `;
+
+            document.getElementById('timeline').appendChild(momentDiv);
+
+            document.getElementById('title').value = '';
+            document.getElementById('description').value = '';
+            document.getElementById('emotion').value = '';
+            document.getElementById('people').value = '';
+        }
+
+        function addMilestone() {
+            const title = document.getElementById('milestoneTitle').value;
+            const desc = document.getElementById('milestoneDesc').value;
+            if (!title || !desc) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            const milestoneDiv = document.createElement('div');
+            milestoneDiv.className = 'milestone';
+            milestoneDiv.innerHTML = `
+        <h3>${title}</h3>
+        <p>${desc}</p>
+      `;
+
+            document.getElementById('milestoneList').appendChild(milestoneDiv);
+
+            document.getElementById('milestoneTitle').value = '';
+            document.getElementById('milestoneDesc').value = '';
+        }
+    </script>
+</body>
+
+</html>

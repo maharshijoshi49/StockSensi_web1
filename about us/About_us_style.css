@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.hero {
+    background-color: #000000;
+}
+
+.about-links {
+    background-color: #1a1a1a;
+}
+
+.section-card {
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
+}
+
+.card-title {
+    color: #39ff14;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    background-color: #1a1a1a
+}

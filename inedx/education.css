@@ -1,0 +1,69 @@
+.section-card {
+    background-color: #000000;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px #39ff14(0, 255, 0, 0.2);
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* Apply green color to all heading elements */
+
+h1,
+h2,
+h3,
+h4 {
+    color: #39ff14;
+    /* Bootstrap green shade; change if needed */
+}
+
+.content-section {
+    padding: 2rem 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.card {
+    background-color: #000;
+    /* Black background */
+    color: #fff;
+    /* White text */
+    border: 1px solid #333;
+}
+
+.card-title {
+    color: #00ff00;
+    /* Bright green heading */
+}
+
+.card-text small.text-body-secondary {
+    color: #aaa;
+    /* Slightly muted grey for the small text */
+}
+
+.card-img-top,
+.card-img-bottom {
+    border-radius: 0;
+    /* Optional: keeps images square-cornered */
+}
+
+.card-body {
+    background-color: #000000;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

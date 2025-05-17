@@ -1,0 +1,296 @@
+#mybox {
+    color: white
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.abc {
+    height: 100px;
+    margin: auto
+}
+
+
+/* .background {
+    background-image: url(index.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 200px;
+    z-index: 100;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    background-color: black;
+    padding: 15px 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    width: 100%;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 50px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #39ff14;
+}
+
+
+/* {
+    text-align: right;
+    padding-top: 120px;
+} */
+
+.logo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    width: 10px;
+}
+
+li {
+    padding: 20;
+    display: inline;
+}
+
+#otherh1 {
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    padding-top: 50px;
+}
+
+.jumbotron {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    border: 1px solid #333;
+}
+
+.jumbotron .btn-primary {
+    background-color: #39ff14;
+    border-color: #39ff14;
+    color: black;
+}
+
+.jumbotron .btn-primary:hover {
+    background-color: #2bd40f;
+    border-color: #2bd40f;
+}
+
+.stocksensi-info {
+    color: white;
+    font-size: 30px;
+}
+
+h1 {
+    color: white;
+    align: left;
+}
+
+.custom-carousel {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.custom-carousel .carousel-inner,
+.custom-carousel .carousel-item,
+.custom-carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+html,
+body {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #39ff14;
+}
+
+.footer .row {
+    margin-bottom: 20px;
+}
+
+.footer .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.footer .col-12 {
+    margin-top: 20px;
+}
+
+.footer .text-center {
+    font-size: 12px;
+}
+
+.brand-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.brand-link:hover {
+    color: #39ff14;
+    /* Neon green */
+    text-decoration: none;
+}
+
+.green-text {
+    color: green;
+}
+
+.lead {
+    color: #94999fbf
+}
+
+.section-card {
+    background-color: black;
+    border: 2px solid transparent;
+    /* Start with transparent border */
+    border-radius: 15px;
+    /* Curved edges */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+
+/* Optional: Make all columns equal height */
+
+.row.g-4>div {
+    display: flex;
+}
+
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+
+.welcome-section {
+    padding: 4rem 2rem;
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.nav-link {
+    color: green;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.nav-link text:hover {
+    color: green;
+}
+
+.navbar {
+    min-height: 50px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <img src="logo2.png" alt="image" height="400" width="500">
+    <button onclick="Next()">Next</button>
+    <button onclick="Previous()">Previous</button>
+    <script>
+        function Next() {
+            document.getElementsByTagName("img")[0].src = "normal.jpg"
+        }
+
+        function Previous() {
+            document.getElementsByTagName("img")[0].src = "sky.jpg"
+
+
+        }
+    </script>
+</body>
+
+</html>
