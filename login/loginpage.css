@@ -1,54 +1,125 @@
-/* Reset some default styles */
-
-body,
-html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #111213, #000000);
-}
-
-.login-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.login-form {
-    background-color: green;
-    padding: 40px 30px;
-    border-radius: 16px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
-}
-
-.logo-container {
-    text-align: center;
-}
-
-h2 {
-    color: #333;
-    font-weight: 600;
-}
-
-.form-control {
-    border-radius: 12px;
-}
-
-.btn-primary {
-    background-color: #000000;
-    border: none;
-    border-radius: 12px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #000000;
-}
-
-.text-muted {
-    font-size: 0.875rem;
-}
+ /* Background and font */
+ 
+ body,
+ html {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     background: linear-gradient(to bottom, #24ee31, #000000);
+     font-family: Arial, sans-serif;
+     color: white;
+ }
+ /* Navbar */
+ 
+ .navbar {
+     background-color: #212529 !important;
+ }
+ 
+ .navbar-brand {
+     font-weight: bold;
+     color: white !important;
+ }
+ 
+ .navbar-brand:hover {
+     color: #24ee31 !important;
+ }
+ 
+ .nav-link {
+     color: white !important;
+     transition: color 0.3s ease;
+ }
+ 
+ .nav-link:hover,
+ .nav-link:focus {
+     color: #24ee31 !important;
+ }
+ /* Main layout */
+ 
+ .main-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 50px 20px;
+     min-height: calc(100vh - 56px);
+ }
+ 
+ .main-card {
+     width: 100%;
+     max-width: 1100px;
+ }
+ /* Card styles */
+ 
+ .custom-card {
+     background-color: rgba(0, 0, 0, 0.85);
+     color: white;
+     border-radius: 10px;
+     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+     padding: 30px;
+     height: 100%;
+ }
+ /* Description image */
+ 
+ .description-image {
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+     margin-bottom: 20px;
+     object-fit: cover;
+ }
+ /* Form controls */
+ 
+ .form-control {
+     background-color: #121212;
+     color: white;
+     border: 1.5px solid #24ee31;
+     border-radius: 6px;
+     padding: 12px 15px;
+     font-size: 16px;
+     transition: border-color 0.3s ease;
+ }
+ 
+ .form-control::placeholder {
+     color: #b3b3b3;
+ }
+ 
+ .form-control:focus {
+     outline: none;
+     border-color: #00ff00;
+     box-shadow: 0 0 8px #00ff00a0;
+ }
+ /* Labels */
+ 
+ .form-label {
+     color: #b3b3b3;
+     font-weight: 600;
+     margin-bottom: 6px;
+     display: block;
+ }
+ /* Button */
+ 
+ .btn-custom {
+     background-color: #24ee31;
+     border: none;
+     color: black;
+     width: 100%;
+     padding: 12px;
+     font-weight: bold;
+     font-size: 18px;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+ 
+ .btn-custom:hover {
+     background-color: #1ed72b;
+ }
+ /* Green text utility */
+ 
+ .custom-card2 {
+     background-color: green;
+     color: white;
+     border-radius: 10px;
+     box-shadow: black;
+     padding: 30px;
+     height: 100%;
+ }

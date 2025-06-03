@@ -8,252 +8,216 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">StockSensi</a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link" href="about_us/About_us2.html">About Us</a>
-                    <a class="nav-link" href="pricing/pricing.html">Pricing</a>
-                    <a class="nav-link active" href="about_us/utlity_classes.html">Utilities</a>
-                    <a class="nav-link" href="login/loginpage.html">Login</a>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class=" container-fluid ">
+            <a class="navbar-brand " href="index.html ">StockSensi</a>
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarNav " aria-controls="navbarNav " aria-expanded="false " aria-label="Toggle navigation ">
+                
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+            <div class="collapse navbar-collapse " id="navbarNav ">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item ">
+                        <a class="nav-link active " href="C:\Users\hp\AppData\Local\HTML\webs\index.html ">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="C:\Users\hp\AppData\Local\HTML\webs\about us\About_us2.html ">About Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="C:\Users\hp\AppData\Local\HTML\webs\pricing\pricing.html ">Pricing</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="markets.html ">Markets</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="C:\Users\hp\AppData\Local\HTML\webs\about us\utlity_clases.html ">Utilities</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="C:\Users\hp\AppData\Local\HTML\webs\login\loginpage.html ">Login</a>
+                    </li>
+                    <li> <input type="text " id="search-bar " placeholder="Search... " /></li>
+                    <li>
+                        <button class="Button ">Search</button>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Carousel -->
-    <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"></button>
-            <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+
+    <!-- Fixed Carousel -->
+    <div id="carouselExampleIndicators " class="carousel slide " data-bs-ride="carousel " data-bs-interval="3000 ">
+        <div class="carousel-indicators ">
+            <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="0 " class="active " aria-current="true " aria-label="Slide 1 "></button>
+            <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="1 " aria-label="Slide 2 "></button>
+            <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="2 " aria-label="Slide 3 "></button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="firstside.png" class="d-block w-100" alt="Slide Image" />
+        <div class="carousel-inner ">
+            <div class="carousel-item active ">
+                <img src="firstside.png " class="d-block w-100 " alt="Slide Image " />
             </div>
-            <div class="carousel-item">
-                <video controls autoplay muted loop class="d-block w-100">
-                    <source
-                        src="https://videos.pexels.com/video-files/5562047/5562047-hd_1920_1080_30fps.mp4"
-                        type="video/mp4" />
-                </video>
+            <div class="carousel-item ">
+                <video autoplay muted loop playsinline class="d-block w-100 ">
+                <source src="https://videos.pexels.com/video-files/5562047/5562047-hd_1920_1080_30fps.mp4 " type="video/mp4 " />
+            </video>
             </div>
-            <div class="carousel-item">
-                <video controls autoplay muted loop class="d-block w-100">
-                    <source
-                        src="https://videos.pexels.com/video-files/5726501/5726501-uhd_2560_1440_30fps.mp4"
-                        type="video/mp4" />
-                </video>
+            <div class="carousel-item ">
+                <video autoplay muted loop playsinline class="d-block w-100 ">
+                <source src="https://videos.pexels.com/video-files/5726501/5726501-uhd_2560_1440_30fps.mp4 " type="video/mp4 " />
+            </video>
             </div>
         </div>
-        <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <button class="carousel-control-prev " type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide="prev ">
+        <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+        <span class="visually-hidden ">Previous</span>
+    </button>
+        <button class="carousel-control-next " type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide="next ">
+        <span class="carousel-control-next-icon " aria-hidden="true "></span>
+        <span class="visually-hidden ">Next</span>
+    </button>
     </div>
 
     <!-- Welcome Section -->
-    <section class="welcome-section">
-        <div class="container">
-            <h1 class="display-4" style="color:green">Welcome to StockSensi</h1>
+    <section class="welcome-section ">
+        <div class="container ">
+            <h1 class="display-4 " style="color:green ">Welcome to StockSensi</h1>
             <br /><br /><br />
-            <p class="lead">
-                "At Stocksensi, we believe that informed investors make the best
-                decisions.<br /><br />
-                Dive into our comprehensive resources and tools designed to elevate
-                your trading experience.<br /><br />
-                Stay ahead of the curve with real-time market data, expert analysis,
-                and personalized investment strategies tailored just for you.<br /><br />
-                Whether you're a seasoned trader or just starting out, Stocksensi
-                provides the insights you need to make informed investment
-                choices.<br /><br />
-                Join a community of passionate investors and gain access to exclusive
-                market insights, tips, and tools that can help you maximize your
-                portfolio.<br /><br />
-                Discover the power of data-driven investing with Stocksensi – your
-                partner in navigating the complexities of the stock market."
+            <p class="lead ">
+                "At Stocksensi, we believe that informed investors make the best decisions. <br /><br /> Dive into our comprehensive resources and tools designed to elevate your trading experience.
+                <br /><br /> Stay ahead of the curve with real-time market data, expert analysis, and personalized investment strategies tailored just for you.
+                <br /><br /> Whether you're a seasoned trader or just starting out, Stocksensi provides the insights you need to make informed investment choices.
+                <br /><br /> Join a community of passionate investors and gain access to exclusive market insights, tips, and tools that can help you maximize your portfolio.
+                <br /><br /> Discover the power of data-driven investing with Stocksensi – your partner in navigating the complexities of the stock market."
             </p>
             <hr class="my-4 bg-light" />
             <p style="color:#94999fbf">
-                It uses utility classes for typography and spacing to space content out
-                within the larger container.
+                It uses utility classes for typography and spacing to space content out within the larger container.
             </p>
-            <a
-                class="btn btn-primary btn-lg"
-                href="about_us/About_us2.html"
-                role="button"
-                >Learn more</a
-            >
+            <a class="btn btn-primary btn-lg" href="about_us/About_us2.html" role="button">Learn more</a>
         </div>
     </section>
 
     <!-- Stock Sections -->
+    <!-- Repeat for all 4 sections like you already had -->
+
+
+    <!-- Section 1 -->
     <section class="stock-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 stock-description">
+
+                <!-- 📝 Text on Left -->
+                <div class="col-md-6 stock-description" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                     <h2>📈 Growing Scope of the Stock Market</h2>
                     <p>
-                        Increased Retail Participation Thanks to mobile trading apps and
-                        simplified platforms like Zerodha, Upstox, Robinhood, etc., retail
-                        investors are entering the market like never before. More awareness,
-                        financial literacy, and ease of access are key drivers.
-                        Globalization of Investing Investors are no longer limited to their
-                        home country’s stock market. Platforms now offer international stock
-                        trading, allowing exposure to big names like Apple, Tesla, and
-                        Alibaba.
+                        Increased Retail Participation Thanks to mobile trading apps and simplified platforms like Zerodha, Upstox, Robinhood, etc., retail investors are entering the market like never before. More awareness, financial literacy, and ease of access are key drivers.
+                        <br><br> Globalization of Investing: Investors are no longer limited to their home country’s stock market. Platforms now offer international stock trading, allowing exposure to big names like Apple, Tesla, and Alibaba.
                     </p>
                 </div>
+
+                <!-- 🖼️ Image on Right -->
                 <div class="col-md-6 stock text-end">
-                    <img
-                        src="https://wallpaperaccess.com/full/732346.jpg"
-                        alt="Stock Market Insight"
-                        height="320"
-                        width="400" />
+                    <img src="https://wallpaperaccess.com/full/732346.jpg" class="Card-photos3" alt="Stock Market Insight" height="320" width="400" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
+
             </div>
         </div>
     </section>
-    <br /><br /><br />
 
+
+
+    <br>
+    <br>
+    <!-- Section 2 -->
     <section class="stock-section">
         <div class="container">
             <div class="row align-items-center flex-row-reverse">
-                <div class="col-md-6 stock-description">
+
+                <!-- Text on Right -->
+                <div class="col-md-6 stock-description" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                     <h2>💰 Rise of Tech & Innovation Sectors like AI</h2>
                     <p>
-                        Rise of Tech & Innovation Sectors like AI, fintech, clean energy,
-                        electric vehicles, and biotech are booming — and the stock market
-                        reflects that. These sectors are expected to outperform traditional
-                        industries over the next decade. Emergence of New Investment Products
-                        From ETFs and REITs to cryptocurrency-linked assets and green bonds,
-                        there's a surge in diverse investment options designed for different
-                        risk profiles.
+                        Rise of Tech & Innovation Sectors like AI, fintech, clean energy, electric vehicles, and biotech are booming — and the stock market reflects that. These sectors are expected to outperform traditional industries over the next decade.
+                        <br><br> Emergence of New Investment Products From ETFs and REITs to cryptocurrency-linked assets and green bonds, there's a surge in diverse investment options designed for different risk profiles.
                     </p>
                 </div>
+
+                <!-- Image on Left -->
                 <div class="col-md-6 stock text-start">
-                    <img
-                        src="https://wallpaperaccess.com/full/732366.jpg"
-                        alt="Stock Market Insight"
-                        height="320"
-                        width="400" />
+                    <img src="https://wallpaperaccess.com/full/732366.jpg" class="Card-photos3" alt="Stock Market Insight" height="320" width="400" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" />
                 </div>
+
             </div>
         </div>
     </section>
-    <br /><br /><br />
+    <br>
+    <br>
 
+    <!-- Section 3 -->
     <section class="stock-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 stock-description">
+
+                <!-- Text on Left -->
+                <div class="col-md-6 stock-description" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                     <h2>🔮 Future of the Stock Market</h2>
                     <p>
-                        AI & Algorithmic Trading Advanced algorithms and machine learning
-                        models are shaping the future of trading. Expect more automated
-                        portfolio management and predictive analytics in investing.
-                        Tokenization of Assets In the near future, we might see stocks
-                        traded as digital tokens on blockchain networks, increasing
-                        transparency and reducing transaction time. Sustainable & ESG
-                        Investing Environmental, Social, and Governance (ESG) factors are
-                        becoming a priority. Investors are increasingly putting their money
-                        into sustainable and ethical businesses.
+                        AI & Algorithmic Trading: Advanced algorithms and machine learning models are shaping the future of trading. Expect more automated portfolio management and predictive analytics in investing.
+                        <br><br> Tokenization of Assets: In the near future, we might see stocks traded as digital tokens on blockchain networks, increasing transparency and reducing transaction time.
+                        <br><br> Sustainable & ESG Investing: Investors are increasingly putting their money into sustainable and ethical businesses.
                     </p>
                 </div>
+
+                <!-- Image on Right -->
                 <div class="col-md-6 stock text-end">
-                    <img
-                        src="https://wallpaperaccess.com/full/2927467.png"
-                        alt="Stock Market Insight"
-                        height="320"
-                        width="400" />
+                    <img src="https://cdn.pixabay.com/photo/2021/05/27/02/07/gamestop-6286877_1280.jpg" class="Card-photos3" alt="Stock Market Insight" height="320" width="400" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" />
                 </div>
+
             </div>
         </div>
     </section>
-    <br /><br /><br />
 
+    <br>
+    <!-- Section 4 -->
     <section class="stock-section">
         <div class="container">
             <div class="row align-items-center flex-row-reverse">
-                <div class="col-md-6 stock-description">
+
+                <!-- Text on Right -->
+                <div class="col-md-6 stock-description" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                     <h2>📲 Democratization via Decentralized Finance</h2>
                     <p>
-                        Democratization via Decentralized Finance (DeFi) DeFi might
-                        challenge traditional finance by creating open, decentralized
-                        platforms where anyone can invest, borrow, or lend — further
-                        opening up the markets. AI-powered Personal Advisors Robo-advisors
-                        and AI-driven financial tools will evolve to offer personalized,
-                        data-driven advice to every investor, not just the rich.
+                        Democratization via Decentralized Finance (DeFi): DeFi might challenge traditional finance by creating open, decentralized platforms where anyone can invest, borrow, or lend — further opening up the markets.
+                        <br><br> AI-powered Personal Advisors: Robo-advisors and AI-driven financial tools will evolve to offer personalized, data-driven advice to every investor, not just the rich.
                     </p>
                 </div>
+
+                <!-- Image on Left -->
                 <div class="col-md-6 stock text-start">
-                    <img
-                        src="https://wallpaperaccess.com/full/2848059.jpg"
-                        alt="Stock Market Insight"
-                        height="320"
-                        width="400" />
+                    <img src="https://wallpaperaccess.com/full/2848059.jpg" class="Card-photos3" alt="Stock Market Insight" height="320" width="400" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" />
                 </div>
+
             </div>
         </div>
     </section>
-    <br /><br /><br />
 
-    <a class="navbar-brand brand-link" href="index.html">StockSensi</a>
+    <br>
+    <br>
+    <br>
 
     <!-- Footer -->
     <footer class="footer">
@@ -262,7 +226,7 @@
                 <h2 class="text-center mb-5">Explore More</h2>
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-3">
-                        <a href="about_us/education.html" class="card-link">
+                        <a href="C:\Users\hp\AppData\Local\HTML\webs\about us\education.html" class="card-link">
                             <div class="card text-white section-card text-center">
                                 <div class="card-body">
                                     <h4 class="card-title">Education</h4>
@@ -321,10 +285,10 @@
                 <div class="col-md-4">
                     <h5>Quick Links</h5>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about_us/About_us2.html">About Us</a></li>
-                        <li><a href="pricing/pricing.html">Pricing</a></li>
-                        <li><a href="login/loginpage.html">Contact</a></li>
+                        <li><a href="C:\Users\hp\AppData\Local\HTML\webs\index.html">Home</a></li>
+                        <li><a href="C:\Users\hp\AppData\Local\HTML\webs\about us\About_us2.html">About Us</a></li>
+                        <li><a href="C:\Users\hp\AppData\Local\HTML\webs\pricing\pricing.html">Pricing</a></li>
+                        <li><a href="C:\Users\hp\AppData\Local\HTML\webs\contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -333,8 +297,10 @@
                     <p>Phone: 8106209694</p>
                     <div class="social-icons">
                         <a href="#"><span class="material-icons">facebook</span></a>
+
+                        <a href="#"><span class="material-icons">nstagram</span></a>
+
                         <a href="#"><span class="material-icons">twitter</span></a>
-                        <a href="#"><span class="material-icons">instagram</span></a>
                     </div>
                 </div>
             </div>
@@ -345,7 +311,20 @@
         </div>
     </footer>
 
+
+
+    <!-- Bootstrap JS (bundle with Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
 </body>
 
 </html>

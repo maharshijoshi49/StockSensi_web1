@@ -25,7 +25,7 @@ body {
 }
 
 .card-title {
-    color: #39ff14;
+    color: white;
 }
 
 .card-link {
@@ -39,4 +39,8 @@ body {
 
 .footer {
     background-color: #1a1a1a
+}
+
+.navbar-brand:hover {
+    color: green;
 }

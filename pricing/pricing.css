@@ -15,11 +15,14 @@ body {
 .course-card:hover {
     border-color: green;
     transform: scale(1.02);
-    /* optional zoom effect on hover */
 }
 
 .course-img {
     border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .btn-primary {
@@ -41,13 +44,6 @@ footer {
     border-top: 1px solid #333;
 }
 
-.course-img {
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
 .section-card {
     background-color: black;
     border: none;
@@ -62,7 +58,7 @@ footer {
 }
 
 .card-title {
-    color: #39ff14;
+    color: white;
 }
 
 .card-link {
@@ -74,9 +70,16 @@ footer {
     color: white;
 }
 
-.Quick-links {
-    a {
-        text-decoration: none;
-        color: white
-    }
+.quick-links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: green;
 }

@@ -50,27 +50,26 @@ a {
     color: white;
 }
 
+
+/* Navbar Styling */
+
 .navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar .nav-link {
+    color: #ddd !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #00ff88 !important;
     background-color: black;
-    padding: 15px 20px;
-}
-
-.navbar ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    width: 100%;
-}
-
-.navbar ul li a {
-    color: white;
-    font-size: 50px;
-    transition: color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    color: #39ff14;
+    border-radius: 8px;
 }
 
 
@@ -88,8 +87,9 @@ a {
 }
 
 li {
-    padding: 20;
+    padding: 40;
     display: inline;
+    margin-right: 20px;
 }
 
 #otherh1 {
@@ -293,4 +293,46 @@ body {
 
 .navbar {
     min-height: 50px;
+}
+
+.Card-photos3 {
+    border-radius: 25px;
+    /* Adjust the px value for more/less curve */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Optional: adds soft shadow */
+}
+
+#search-bar {
+    padding: 5px 8px;
+    font-size: 14px;
+    max-width: 150px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    flex: 1 1 150px;
+    border-color: green;
+    background-color: black;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: green;
+}
+
+.Button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    flex: 1 1 150px;
+    padding: 3px;
+}
+
+.navbar {
+    min-height: 50px;
+    background-color: black;
+    /* 🔥 Yeh line add karo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
 }
